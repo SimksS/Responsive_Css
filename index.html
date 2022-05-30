@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Lista de Produtos</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="head-title">
+            <h1>Shop Now</h1>
+        </div>
+        <section class="filterContainer">
+            <div id="filters" class="filtersButtons">
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarProdutos mostrarTodos active">Todos Produtos</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarProdutos">Hortifruti</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarProdutos">Panificadora</button>
+                <button class="estiloGeralBotoes estiloGeralBotoes--filtrarProdutos">Laticínios</button>
+            </div>
+            <div class="containerBuscaPorNome">
+                <input type="text" placeholder="Pesquisar por" class="campoBuscaPorNome">
+                <button class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><img src="src\img\search.png" alt=""></button>
+            </div>
+        </section>  
+    </header>
+    <main>
+        <div class="containerListaProdutos" id="listProdutos">
+            <ul>
+            </ul>
+        </div>
+        <section class="cart">
+            <h4 class="cart-title">Carrinho<img src="./src/img/cartIcon.png"></h4>
+            <div class="itens-place">
+                <div class="no-itens">
+                    <img src="src\img\shopping-bag.png" alt="" class="no-itens-img">
+                    <p>Por enquanto não temos produtos no carrinho</p>
+                </div>
+                <div class="cart-item">      
+                </div>
+            </div>
+            <ul class="cart-checkout empty-cart">
+                <ul class="cart-quantity-place">
+                    <li>Quantidade</li>
+                    <li id="quantidadeTotal">0</li>
+                </ul>
+                <ul class="cart-price-place">
+                    <li>Total</li>
+                    <li id="precoTotal">R$ 0</li>
+                </ul>
+            </ul>
+        </section>
+    </main>
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
